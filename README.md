@@ -1,3 +1,5 @@
-# Stalker
+# Prototype game
 
-Developed with Unreal Engine 5
+Just some prototype C++ game
+
+
