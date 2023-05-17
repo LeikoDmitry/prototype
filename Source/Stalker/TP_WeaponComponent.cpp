@@ -1,6 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-
 #include "TP_WeaponComponent.h"
 #include "StalkerCharacter.h"
 #include "StalkerProjectile.h"

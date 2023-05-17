@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #include "StalkerCharacter.h"
 #include "StalkerProjectile.h"
 #include "Animation/AnimInstance.h"
@@ -7,10 +5,6 @@
 #include "Components/CapsuleComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
-
-
-//////////////////////////////////////////////////////////////////////////
-// AStalkerCharacter
 
 AStalkerCharacter::AStalkerCharacter()
 {
@@ -53,8 +47,6 @@ void AStalkerCharacter::BeginPlay()
 
 }
 
-//////////////////////////////////////////////////////////////////////////// Input
-
 void AStalkerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// Set up action bindings
@@ -93,7 +85,6 @@ void AStalkerCharacter::Look(const FInputActionValue& Value)
 
 	if (Controller != nullptr)
 	{
-		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
