@@ -1,5 +1,4 @@
 #include "StalkerCharacter.h"
-#include "StalkerProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -29,6 +28,16 @@ AStalkerCharacter::AStalkerCharacter()
 	//Mesh1P->SetRelativeRotation(FRotator(0.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-30.f, 0.f, -150.f));
 
+}
+
+USkeletalMeshComponent *AStalkerCharacter::GetMesh1P() const
+{
+	return Mesh1P;
+}
+
+UCameraComponent *AStalkerCharacter::GetFirstPersonCameraComponent() const
+{
+	return FirstPersonCameraComponent;
 }
 
 void AStalkerCharacter::BeginPlay()
